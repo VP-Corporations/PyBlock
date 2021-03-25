@@ -3,8 +3,6 @@ import time
 a = input("Enter your text here. ")
 intrand1 = random.randint(1, 10000)
 intrand2 = random.randint(1, 10000)
-
-
 def Encrypt():
     global string
     string = ""
@@ -12,8 +10,6 @@ def Encrypt():
         codeda = ord(i) * intrand1 + intrand2
         string = string + str(codeda)
     return string
-
-
 def Decrypt(Input):
     global x
     for a in Input:
@@ -24,8 +20,6 @@ def Decrypt(Input):
         return "Your text message is: " + Input
     elif askfortext == string:
         print()
-
-
 print(Encrypt())
 askencrypt = input("Do you want to decode your text? ")
 time.sleep(1)
